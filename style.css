@@ -1,0 +1,289 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+ body {
+    width:100%;
+    min-height: 100vh;
+    background-color:#101010;
+    color:white;
+ }
+
+ container {
+    width:100%;
+    height: 100%;
+    display: flex;
+    background-color: #101010;
+ }
+
+ nav {
+    display: flex;
+    flex-direction: column;
+    width:90px;
+    max-width: 250px;
+    height:100vh;
+    justify-content: space-between;
+    padding:10px;
+    background-color: #161616;
+    margin:0 7px 0 0;
+    transition: 0.05s;
+ }
+
+ nav:hover span {
+   display: block;
+   font-size: 1rem;
+   letter-spacing: 3px;
+   margin-left: 20px;
+}
+
+ nav:hover {
+    width:30%;
+ }
+
+ nav a:hover {
+    background-color: #202020;
+ }
+
+ nav a {
+    display: flex;
+    align-items: center;
+    text-decoration:none ;
+    margin:10px 0;
+    border-radius: 5px;
+    padding:15px;
+    transition: 0.05s;
+ }
+
+ nav button {
+    padding:10px;
+    background-color: darkred;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.05s;
+ }
+
+ nav button:hover {
+    background-color: rgb(155, 11, 11);
+ }
+
+ nav i {
+    font-size: 1.5rem;
+    color: white;
+ }
+
+ nav span {
+    font-size: 0.01rem;
+    color:white;
+    display: none;
+ }
+
+ nav #upper .prof {
+   display: flex;
+   align-items: center;
+ }
+
+ nav #upper .prof img {
+    width:50px;
+    border-radius: 50%;
+    border:solid white 3px;
+ }
+
+ nav #upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ nav ul {
+    list-style: none;
+ }
+
+ nav #links-cont li a:first-child {
+    background-color: #202020;
+ }
+
+content {
+   width:100%;
+   height:100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+content #dashboard {
+   display: flex;
+   flex-direction: column;
+   height:100%;
+   border-radius: 10px;
+}
+
+content #dashboard #head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(27, 104, 210);
+   border-radius: 10px;
+   margin:15px 15px 7px 7px;
+   padding:10px;
+}
+
+content #dash-cont {
+   display: flex;
+   height:100%;
+   flex-flow: wrap;
+   padding-right: 7px;
+}
+
+#dash-cont .sec {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-basis: 150px;
+   height: 150px;
+   flex-grow:1;
+   background-color: #161616;
+   border-radius: 10px;
+   padding:30px;
+   justify-content: space-between;
+   margin:7px;
+}
+
+#dash-cont .sec .info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#dash-cont .sec i {
+   font-size: 3rem;
+}
+
+#dash-cont .sec .title {
+   font-size:1rem;
+}
+
+#dash-cont .sec .value {
+   font-size:2rem;
+}
+
+product-table {
+   display: flex;
+   flex-direction: column;
+   width:100%;
+   height:100%;
+}
+
+products-table #head {
+   display: flex;
+   height:100%;
+   background-color: rgb(27, 104, 210);
+   margin: 7px 15px 0 7px;
+   border-radius: 10px;
+   padding:10px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+products-table table {
+   width:100%;
+   height:100%;
+   border-spacing: 10px;
+   margin-top: 5px;
+   margin-left: -5px;
+   text-align: center;
+}
+
+products-table table thead {
+   background-color: rgb(27, 104, 210);
+}
+
+products-table table tr {
+   width:100%;
+   height:100%;
+}
+
+th {
+   background-color: rgb(27, 104, 210);
+   padding:15px;
+   border-radius: 10px;
+}
+
+products-table table td {
+   background-color: #161616;
+   padding:15px;
+   border-radius: 10px;
+   text-align: center;
+   font-weight: 600;
+   transition: 0.05s;
+}
+
+td:hover {
+   background-color: #202020;
+}
+
+.price, .count {
+   padding:5px;
+   width:fit-content;
+   border-radius: 5px;
+}
+
+.price {
+   background-color: green;
+}
+
+.count {
+   background-color: gold;
+   color:black;
+}
+
+@media (max-width:890px){
+   .sec {
+      width:130px;
+   }
+}
+
+@media (max-width:700px) {
+   nav:hover span {
+      display: none;
+   }
+
+   nav:hover {
+      width:90px;
+   }
+
+   nav i {
+      font-size: 1rem;
+   }
+}
+
+@media (max-width:390px) {
+   nav:hover {
+      width:90px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
